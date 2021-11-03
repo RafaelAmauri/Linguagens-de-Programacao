@@ -1,0 +1,78 @@
+\chapter{Comparações Notáveis}
+
+
+\textbf{Benchmark}
+
+Abaixo pode ser vista uma análise qualitativa da linguagem C
+ em relação às linguagens Java, Python 3  e Node.js. Enquanto Java é uma linguagens executada na JVM 
+ e Python 3 e Node são duas linguagens interpretadas, C é uma linguagem compilada e o 
+ objetivo deste Benchmark é comparar o tempo de execução e consumo de memória. 
+
+
+Todos os testes foram realizados no seguinte hardware:
+
+\begin{table}[ht]
+    \centering
+    \caption{Configurações}
+    \begin{tabular}{| c | c |}
+        \hline 
+        CPU & Intel i5-3330 3.0GHz quad-core\\
+        \hline
+        RAM & 15.8 GB of RAM \\
+        \hline 
+        HDD & 2TB SATA disk drive \\
+        \hline
+        OS & Ubuntu 21.04 x\(86\_64\) GNU Linux \(5.11.0-18-\)generic \\
+        \hline   
+    \end{tabular}
+    
+    \textbf{Fonte:} \url{https://benchmarksgame-team.pages.debian.net/benchmarksgame/how-programs-are-measured.html}
+ 
+\end{table}
+
+
+
+\begin{table}[ht]
+    \centering
+    \caption{Resultados do teste busca e escrita em uma árvore binária}
+    \begin{tabular}{| c | c | c |}
+        \hline 
+        Linguagem & Tempo de execução (segundos)
+        & Uso de memória RAM (bytes) \\
+        \hline
+        C & 1.54 & 168,832 \\
+        \hline 
+        Java & 2.48 & 1,725,776 \\
+        \hline
+        Python 3 & 4.83 & 462,732 \\
+        \hline
+        Node.js (Javascript) & 7.20 & 1,282,116\\ 
+        \hline  
+              
+    \end{tabular}
+    \textbf{Fonte:} \url{benchmarksgame-team.pages.debian.net/benchmarksgame/performance/binarytrees.html}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption{Resultados do teste de complemento de genoma humano}
+    \begin{tabular}{| c | c | c |}
+        \hline 
+        Linguagem & Tempo de execução (segundos)
+        & Uso de memória RAM (bytes) \\
+        \hline
+        C & 0.86 & 712,208 \\
+        \hline 
+        Java & 1.53 & 687,864 \\
+        \hline
+        Python 3 & 7.20 & 1,005,184 \\
+        \hline
+        Node.js (Javascript) & 2.21 & 1,534,824 \\ 
+        \hline
+        
+    \end{tabular}
+    \textbf{Fonte:} \url{https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/revcomp.html}
+\end{table}
+
+
+\newpage

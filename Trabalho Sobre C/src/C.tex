@@ -1,0 +1,111 @@
+\documentclass[
+  % -- opções da classe memoir --
+  12pt,				         % tamanho da fonte
+  oneside,			       % para impressão apenas no recto. Oposto a twoside
+  a4paper,			       % tamanho do papel. 
+  article,
+  % -- opções da classe abntex2 --
+  %chapter=TITLE,		   % títulos de capítulos convertidos em letras maiúsculas
+  %section=TITLE,		   % títulos de seções convertidos em letras maiúsculas
+  %subsection=TITLE,	 % títulos de subseções convertidos em letras maiúsculas
+  %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+  % -- opções do pacote babel --
+  english,		       	 % idioma adicional para hifenização
+  brazil,			      	 % o último idioma é o principal do documento
+]{abntex2}
+\usepackage{meupacote}
+
+\titulo{A Linguagem C}
+\autor{Homenique Vieira Martins \and Rafael Amauri Diniz Augusto }
+\local{Belo Horizonte}
+\data{2021}
+\instituicao{%
+  Pontifícia Universidade Católica Minas Gerais
+  }
+\tipotrabalho{Trabalho de LIP}
+% ---
+% 
+% ---
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={Trabalho de Linguagem de programação em LaTeX},
+	    pdfcreator={GLR, LSO, PS, THN},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{Linguagem de programação}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+
+\makeindex
+
+% ---
+% Iniciando efetivamente o documento
+% ---
+\begin{document} 
+
+    % Fazer com que as secções sejão subcapitulos
+    \renewcommand{\thesection}{\noindent\arabic{chapter}.\arabic{section}}. 
+    % ---
+    % Selecionando linguagem
+    % ---
+    \selectlanguage{brazil}
+    % ---
+    % Retira espaço extra obsoleto entre as frases.
+    % ---
+    \frenchspacing
+    % ---
+    % Imprimir a capa 
+    % ---
+    \imprimircapa
+    % ---
+    % Imprimir a tabela de conteúdos(Sumário)
+    % ---
+    \pdfbookmark[0]{\contentsname}{toc}
+    \tableofcontents*
+    \listoftables
+    \cleardoublepage
+    % ---
+    % PARTE TEXTUAL
+    % ---
+    \textual
+    % ---
+    % Criar nova página e então iniciar a escrita
+    % ---
+    \newpage
+    
+    \import{./seccoes}{chapter1.tex}
+
+    \import{./seccoes}{chapter2.tex}
+
+    \import{./seccoes}{chapter3.tex}
+
+    \import{./seccoes}{chapter4.tex}
+
+    \import{./seccoes}{chapter5.tex}
+
+    \import{./seccoes}{chapter6.tex}
+    
+    \import{./seccoes}{chapter7.tex}
+
+    \import{./seccoes}{conclusao.tex}
+
+    \postextual
+
+    \bibliography{referencias}
+    \import{./seccoes}{appendice.tex}
+
+    \phantompart
+
+    \printindex
+
+\end{document}
+
+

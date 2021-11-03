@@ -1,0 +1,52 @@
+\chapter{Projetos reconhecidos que usam C}
+
+Sistemas Operacionais favorecem muito o uso da linguagem C para seu desenvolvimento por causa da proximidade da 
+linguagem com o hardware, o suporte a múltiplas arquiteturas (como x86, x86\_64, arm, arm64 e RISC-V),
+
+\begin{itemize}
+    \item Unix, Linux Kernel, MacOS, Windows NT Kernel, FreeBSD
+    Sistemas Operacionais favorecem muito o uso da linguagem C 
+    para seu desenvolvimento por causa da proximidade da linguagem com o hardware, 
+    o suporte a múltiplas arquiteturas (como x86, x86\_64, arm, arm64 e RISC-V), a altíssima 
+    qualidade e confiança nos compiladores de C (GCC e Clang principalmente), e alto nível de 
+    controle sobre o assembly code que vai ser gerado a partir do código-fonte. Abaixo seguem 
+    exemplos de alguns sistemas operacionais que são desenvolvidos com a linguagem C.
+\nocite{Unix}
+\nocite{KernelLinux}
+\nocite{macOS}
+
+    \item AndroidOS, iOS
+    importam muito do desenvolvimento que foi feito no Linux e no MacOS, respectivamente.
+    A portabilidade de código em C é um dos motivos para essa escolha, já que compilar para outra arquitetura
+    em C muitas vezes envolve apenas adicionar uma flag de compilação.
+\nocite{Android}
+    \item Arduino
+    O suporte aos mais diversos tipos de dispositivos é essencial para trabalhar com Arduino, e o suporte de C a
+    diferentes dispositivos provê justamente essa questão de portabilidade e suporte. O hardware dentro do Arduino
+    também é comparativamente fraco quando comparado a um PC ou um celular, então utilizar uma linguagem compilada
+    que minimiza o overhead de runtime e consumo de memória é um ponto importante.
+    \nocite{arduino}
+
+    \item PostgreSQL, MySQL, Oracle Database
+    Fazer consultas em bancos de dados é uma operação extremamente custosa, e websites e aplicações muitas vezes precisam
+    dos resultados dessas operações para mostrar algum elemento, então velocidade de tempo de execução e minimizar o gasto
+    de memória são os fatores mais importantes na hora de fazer esses programas. Por conta do controle excelente sobre memória
+    que a linguagem C oferece e pela proximidade com o hardware, C é uma excelente opção para o desenvolvimento de gerenciadores de bancos de dados.
+    
+    \item Blender
+    Blender é uma aplicação que também precisa de velocidade e eficiência, já que ela lida com enormes quantidades de dados e fazem muitos cálculos por 
+    segundo. Quanto mais eficientes elas. 
+    \nocite{Blender}
+
+    \item Id Tech 1, mais conhecida como Doom Engine
+    
+    Criada por John Carmack, a Doom Engine foi uma engine revolucionária pois 
+    criava uma ilusão de 3D nunca vista antes, além de estabelecer novos paradigmas
+    para o desenvolvimento de jogos. Usando a eficiência de C, fórmulas simplificadas 
+    reduzidos muitos o custos computacionais e criando uma engine leve e eficiente.   
+    \nocite{RETROCOMPATIBILIDADE}
+    \nocite{Id_Tech} 
+
+\end{itemize}
+
+\newpage
