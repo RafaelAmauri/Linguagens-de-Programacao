@@ -1,4 +1,4 @@
-# Linguagens de Programação - LP
+## Linguagens de Programação - LP
 
 Meus arquivos para a matéria de Linguagens de Programação (LP) da PUC Minas com o professor Marco.
 
